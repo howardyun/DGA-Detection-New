@@ -41,7 +41,7 @@ family_full_data_flag = False
 family_predict_file = ''
 
 # 预测模型路径
-base_path = './modelPth/dga/2024031310'
+base_path = '../ModelOutputFIle/modelPth/dga/2024031310'
 ann_name = '0.001ANNModel.pth'
 cnn_name = '0.001CNNModel.pth'
 lstm_name = '0.001LSTMModel.pth'
@@ -216,7 +216,7 @@ if __name__ == '__main__':
     # 获取本次训练记录存放地址
     current_path = SaveResultsPath(current_name, lb_flag, True)
     # 每个训练模型结果存放地址
-    current_model_path = SaveModelPath("modelPth", current_name, lb_flag, True)
+    current_model_path = SaveModelPath("../ModelOutputFIle/modelPth", current_name, lb_flag, True)
     print(current_name, current_path, current_model_path)
 
     # 调用可变参数的模型

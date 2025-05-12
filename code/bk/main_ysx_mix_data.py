@@ -161,23 +161,23 @@ if __name__ == '__main__':
         if int(save_flag) == 1:
             print("保存模型ANN")
             SaveModel(model=model_ann,
-                      target_dir="../modelPth",
+                      target_dir="../../ModelOutputFIle/modelPth",
                       model_name="ANNModel.pth")
             print("保存模型CNN")
             SaveModel(model=model_cnn,
-                      target_dir="../modelPth",
+                      target_dir="../../ModelOutputFIle/modelPth",
                       model_name="CNNModel.pth")
             print("保存模型LSTM")
             SaveModel(model=model_lstm,
-                      target_dir="../modelPth",
+                      target_dir="../../ModelOutputFIle/modelPth",
                       model_name="LSTMModel.pth")
             print("保存模型MIT")
             SaveModel(model=model_mit,
-                      target_dir="../modelPth",
+                      target_dir="../../ModelOutputFIle/modelPth",
                       model_name="MITModel.pth")
             print("保存模型BBYB")
             SaveModel(model=model_bbyb,
-                      target_dir="../modelPth",
+                      target_dir="../../ModelOutputFIle/modelPth",
                       model_name="BBYBModel.pth")
             pass
         pass
@@ -214,7 +214,7 @@ if __name__ == '__main__':
         print(f"确定模型,设备为: {device}")
 
         # 确定模型基本结构
-        base_path = '../modelPth/'
+        base_path = '../../ModelOutputFIle/modelPth/'
         ann_name = 'ANNModel.pth'
         cnn_name = 'CNNModel.pth'
         lstm_name = 'LSTMModel.pth'

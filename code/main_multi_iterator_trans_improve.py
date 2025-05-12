@@ -124,7 +124,7 @@ if __name__ == '__main__':
     # 获取本次训练记录存放地址
     current_path = SaveResultsPath(current_name, lb_flag, False)
     # 每个训练模型结果存放地址
-    current_model_path = SaveModelPath("modelMultiPth", current_name, lb_flag, False)
+    current_model_path = SaveModelPath("../ModelOutputFIle/modelMultiPth", current_name, lb_flag, False)
     print(current_name, current_path, current_model_path)
 
     # 抽取所有的可变参数,生成模型
